@@ -7,6 +7,8 @@ public class Employee {
     private int extraHour;
 
     public Employee() {
+
+
     }
 
     public  int calculateWage(){
@@ -17,14 +19,14 @@ public class Employee {
             throw new IllegalArgumentException("Salary can not be zero ");
         this.baseSalary=baseSalary;
     }
-    public int getBaseSalary(){
+   private int getBaseSalary(){
         return (baseSalary);
     }
 
     public void setHourRate(int hourRate){
         this.hourRate=hourRate;
     }
-    public int getHourRate(){
+    private int getHourRate(){
         return hourRate;
     }
 
@@ -37,6 +39,7 @@ public class Employee {
     }
 
     public void setExtraHour(int extraHour) {
+
         this.extraHour = extraHour;
     }
 }
